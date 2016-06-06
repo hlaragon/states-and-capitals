@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">States and Capitals</string>
+    <string name="title">States \n and \n Capitals</string>
+    <string name="action_settings">Settings</string>
+    <string name="playGame">PLAY GAME</string>
+    <string name="showScores">SHOW SCORES</string>
+    <string name="exitString">EXIT</string>
+    <string name="state">State</string>
+    <string name="capital">Capital</string>
+    <string name="submit">Submit</string>
+    <string name="valid">true</string>
+    <string name="score">Score:</string>
+    <string name="gameOver">Game Over</string>
+    <string name="end">X</string>
+    <string name="highScoresTitle">High Scores</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_score">ScoreActivity</string>
+    <string name="first_question">Is this a state or capital?</string>
+    <string name="q2state">What is the state?</string>
+    <string name="q2capital">What is the capital?</string>
+    <string name="backToMenu">Exit to Menu</string>
+</resources>

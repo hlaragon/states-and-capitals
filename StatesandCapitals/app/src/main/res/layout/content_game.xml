@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/mintCream"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aragon.hazel.statesandcapitals.GameActivity"
+    tools:showIn="@layout/activity_game">
+
+
+    <TextView
+        android:id="@+id/firstQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/first_question"
+        android:textSize="12pt"
+        android:fontFamily="serif"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/stateOrCapital"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="HELLO"
+        android:textSize="14pt"
+        android:fontFamily="serif"
+        android:textColor="@color/blue"
+        android:gravity="center"
+        android:layout_below="@+id/firstQ"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/q2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="invisible"
+        android:textSize="12pt"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/state"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/stateOrCapital"
+        android:layout_toStartOf="@+id/buttonNameSubmit" />
+
+    <Button
+        android:id="@+id/buttonCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/capital"
+        android:layout_alignTop="@+id/buttonState"
+        android:layout_toEndOf="@+id/buttonNameSubmit" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:hint="Insert answer"
+        android:imeOptions="actionDone"
+        android:ems="10"
+        android:gravity="center"
+        android:layout_marginTop="39dp"
+        android:editable="true"
+        android:visibility="invisible"
+        android:layout_below="@+id/q2"
+        android:layout_alignStart="@+id/buttonState"
+        android:layout_alignEnd="@+id/buttonCapital" />
+
+    <TextView
+        android:id="@+id/textViewScoreWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textSize="11pt"
+        android:fontFamily="serif"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/buttonState" />
+
+    <TextView
+        android:id="@+id/textViewScoreNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="10pt"
+        android:fontFamily="serif"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/buttonSubmit" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:visibility="invisible"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords|textPersonName"
+        android:hint="Your Name"
+        android:editable="true"
+        android:ems="10"
+        android:id="@+id/nameEditText"
+        android:visibility="invisible"
+        android:layout_below="@+id/buttonState"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonNameSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_below="@+id/q2"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonEndGame"
+        android:layout_width="50px"
+        android:layout_height="50px"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:text="@string/end"
+        android:layout_alignBottom="@+id/textViewScoreNum"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
